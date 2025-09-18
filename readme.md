@@ -1,14 +1,10 @@
-funcion anonima
-type of
-compracion por == 
-objeto y dato primitivo string con compracion 1 apunta a referencia donde se alamacena los datos y otros al tipo de dato
-arrays borrar elementos splice
-insertar elementos
-DEVELOPER.MOZILLA FUENTES
+cliente
+svalidacion doble
+api interfaz restful usar http
+endpoint conjunto de url de la q se peude obtener datos
+ventajas y desventajas de programacion moderqna y clasica(interactividad)
+landinpage
+hidratacion pagainas
+mvc{vista  representacio de datos html css interfaz de ussuario y representacion }{controlador controla lo que se ve en la vista y da lso datos desde l bacnk modelo a vista es la interacion entre ellos}{modelo la zona de back datos y logica de negocios }
 
-
-EJERCICIOS
-
-CREA UNA FUNCION QUE RECIBIA UN ARRAY CON CADENA DE CARACTERES Y QUE DEVUELVA LAS QUE TENGAN UNA LONGITUD MAYOR A 3
-CREAR OTRA FUNCION QUE RECIBIA NUMEROS Y QUE DEVUELVE LOS PARES
-CREAR OTRA FUNCION QUE DEVUELVA LOS MENORES E IGUALES QUE 3
+progamacion funcional siemrpe debe devovler un valor
