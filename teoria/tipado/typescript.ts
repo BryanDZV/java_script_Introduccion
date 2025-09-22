@@ -1,4 +1,4 @@
-function incrementArray(xs:number []) {
+function incrementArray(xs:number []) {//Siempre que declares variables o parámetros de funciones, indica su tipo.
     let ys:number [] = [];
     for (let i = 0; i < xs.length; i++) {
         ys[i] = xs[i] + 1;
