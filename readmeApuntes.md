@@ -6,9 +6,14 @@ arrays borrar elementos splice
 insertar elementos
 DEVELOPER.MOZILLA FUENTES
 
+/////////
+
+npm init
+npm install -- save -D vitest
+npm install --save -D typescript
+con la  D se coloca en dependecias de desarrollo no se sube a producion
+SIN LA D en un la entrada de dependencies son la e producion
+si es clonado npm install se inaala todas las dependencias
+
 
 EJERCICIOS
-
-CREA UNA FUNCION QUE RECIBIA UN ARRAY CON CADENA DE CARACTERES Y QUE DEVUELVA LAS QUE TENGAN UNA LONGITUD MAYOR A 3
-CREAR OTRA FUNCION QUE RECIBIA NUMEROS Y QUE DEVUELVE LOS PARES
-CREAR OTRA FUNCION QUE DEVUELVA LOS MENORES E IGUALES QUE 3
