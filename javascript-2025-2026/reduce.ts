@@ -49,14 +49,13 @@ console.log(acronym(palabras));
 
 //function reduce()
 
-function reduce<T>(array:T[], operacion:(acc:T, elem:T)=>T, vI:T): T {
-    let acc = vI; 
-    for (let i = 0; i < array.length; i++) {
-        acc = operacion(acc, array[i]); 
+export function reduce<T,U>(f: (acc: U, x: T) => U, initial: U, xs: T[]): U {
+    let acc = initial;
+    for (const x of xs) {
+        acc = f(acc, x);
     }
     return acc;
 }
-
 
 //funciones logica
 function operacion(acc: number, elem: number): number {
@@ -76,13 +75,13 @@ function contarPares(acc: number, elem: number): number {
 //uso
 
 
-let resultado = reduce(numeros, operacion, 0);
+let resultado = reduce( operacion, 0,numeros);
 console.log(resultado); // 6
 
-let acronimo = reduce(palabras, agregarPrimeraLetra, "");
+let acronimo = reduce( agregarPrimeraLetra, "",palabras);
 console.log(acronimo); // "ASA
 
 
-let totalPares = reduce(pares, contarPares, 0);
+let totalPares = reduce( contarPares, 0,pares,);
 
 console.log(totalPares); // 2
