@@ -1,0 +1,14 @@
+.films{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.film{
+    max-width: 300px;
+}
+
+.film img{
+    max-width: 100%;
+}

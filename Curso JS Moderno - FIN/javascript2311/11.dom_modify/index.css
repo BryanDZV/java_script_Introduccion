@@ -1,0 +1,13 @@
+.heroes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hero{
+    max-width: 400px;
+}
+
+.hero img{
+    max-width: 100%;
+}
