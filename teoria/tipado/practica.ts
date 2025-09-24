@@ -1,0 +1,1 @@
+var fx= (x: number)=>x+1;//

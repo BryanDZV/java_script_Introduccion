@@ -26,3 +26,6 @@ console.log(superior(f,numero));//creada
 
 console.log(numero.map(f));//nativa
  
+//arrow function
+
+let f= x=>x+1;

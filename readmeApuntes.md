@@ -15,5 +15,13 @@ con la  D se coloca en dependecias de desarrollo no se sube a producion
 SIN LA D en un la entrada de dependencies son la e producion
 si es clonado npm install se inaala todas las dependencias
 
+reduceright
+compose
+pipe
+operadores falsy y truhy y nan
+arrow function 
+tecnica currificacion
 
 EJERCICIOS
+implementar un con un numero arbitrtaio de parametros
+añadir un test que use composicion de map gilter y reduce
