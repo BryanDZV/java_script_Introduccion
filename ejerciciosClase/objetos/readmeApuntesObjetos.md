@@ -34,10 +34,5 @@ y desde json a o
 JSON.parse(objeto) se convierte a json
 
 EJERCICIO
-crea una funcion que reciba un objeto y que muestre sus claves de tipo string
-(sit teiensun objeto a:"sdsa" b:"asd"c:1 d:{})
-solo muestra las claves que teng strin a b
 
-2 ejercicio continuacion
 
-la funcion recibe un parametro opcional que sea la profundidad a la que quieres buscar y q por defecto sea 1(mira como psar parametros opcionales maxDeep=1 es un ejempli ose al profuncidad de buscadena encadenada);;mandado
