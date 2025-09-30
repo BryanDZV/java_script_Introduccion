@@ -1,3 +1,18 @@
+para correr .ts instalar 
+npm install -g ts-node ejecutas con node ts
+1 Desde la terminal (Git Bash o CMD)
+
+git remote -v
+
+2 Borrar .git de carpetas o borra carpetas enteras
+En cada carpeta de esas (no en tu repo principal), borra el .git:
+
+rm -rf carpeta/.git
+
+3 comporbar si hay git si esta oculto
+ls -a
+4 en files_exlude entrando con ctrl ,
+pones visible a .git en visual code
 cliente
 svalidacion doble
 api interfaz restful usar http
