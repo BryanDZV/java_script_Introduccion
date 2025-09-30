@@ -32,12 +32,12 @@ sintaxisgify(objeto) te convierte en json
 
 y desde json a o
 JSON.parse(objeto) se convierte a json
+----
+this. es el objeto sin ella la bariable es windows o global es mutable
+llaar a una funcion de objetoo con windows y this 
+bind devuevle una funcion cuyo this es cambiado por la funcion call de dentro.... no llama a ala fucnion crea una funcion que devuevle una fucion call que cambia el this q le pases a esa funcion
+en las arrow funcitno this esn inmutable y se refiere a windows o global
+funcion constructora con new
+proorype
 
 EJERCICIO
-crea una funcion que reciba un objeto y que muestre sus claves de tipo string
-(sit teiensun objeto a:"sdsa" b:"asd"c:1 d:{})
-solo muestra las claves que teng strin a b
-
-2 ejercicio continuacion
-
-la funcion recibe un parametro opcional que sea la profundidad a la que quieres buscar y q por defecto sea 1(mira como psar parametros opcionales maxDeep=1 es un ejempli ose al profuncidad de buscadena encadenada);;mandado
