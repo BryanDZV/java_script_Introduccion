@@ -41,8 +41,3 @@ funcion constructora con new
 proorype
 
 EJERCICIO
-<<<<<<< HEAD:readmeApuntesObjetos.md
-=======
-
-
->>>>>>> 75aba6fe69cc494889678948319138a27203f627:ejerciciosClase/objetos/readmeApuntesObjetos.md
