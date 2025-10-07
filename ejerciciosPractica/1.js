@@ -110,18 +110,18 @@ let edad = 18;
 //   console.log(x);
 // });
 
-function comprobarEdad(edad) {
-  return new Promise((resolve, reject) => {
-    if (edad >= 18) {
-      resolve("mayor de  edad");
-    } else {
-      reject("no es mayor de edad");
-    }
-  });
-}
-comprobarEdad(20).then((x) => {
-  console.log(x);
-});
+// function comprobarEdad(edad) {
+//   return new Promise((resolve, reject) => {
+//     if (edad >= 18) {
+//       resolve("mayor de  edad");
+//     } else {
+//       reject("no es mayor de edad");
+//     }
+//   });
+// }
+// comprobarEdad(20).then((x) => {
+//   console.log(x);
+// });
 //console.log(resultado);
 
 /*Ejercicio 6
@@ -133,38 +133,34 @@ Encadena tres promesas:
 
 Cada una tarda distinto tiempo.*/
 
-// function conectar(params) {
-//   //console.log("22");
+function conectar(params) {
+  //console.log("22");
 
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       let resultado = "conectando";
-//       resolve(resultado);
-//     }, 1000);
-//   });
-// }
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(console.log("conectado"));
+    }, 1000);
+  });
+}
 
-// function descargar() {
-//   return new Promise((resolve, reject) =>
-//     setTimeout(() => {
-//       resolve("descargando");
-//     }, 2000)
-//   );
-// }
+function descargar() {
+  return new Promise((resolve, reject) =>
+    setTimeout(() => {
+      resolve(console.log("descargando"));
+    }, 2000)
+  );
+}
 
-// function listo() {
-//   return new Promise((resolve, reject) => {
-//     //console.log("esperando 3 segundo en listo");
+function listo() {
+  return new Promise((resolve, reject) => {
+    //console.log("esperando 3 segundo en listo");
 
-//     setTimeout(() => {
-//       resolve("listo");
-//     }, 3000);
-//   });
-// }
-// conectar()
-//   .then(descargar)
-//   .then(listo)
-//   .then((x) => {
-//     console.log(x);
-//   })
-//   .catch((err) => console.error(err));
+    setTimeout(() => {
+      resolve(console.log("listo"));
+    }, 3000);
+  });
+}
+conectar()
+  .then(descargar)
+  .then(listo)
+  .catch((err) => console.error(err));
