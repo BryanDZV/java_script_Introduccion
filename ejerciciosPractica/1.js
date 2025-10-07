@@ -91,8 +91,8 @@ se resuelva con "Mayor de edad" si edad >= 18
 
 se rechace con "Menor de edad" en caso contrario.*/
 // let miPromesa = new Promise((resolve, reject) => {
-//   let resultado = "";
-//   let edad = 18;
+let resultado = "";
+let edad = 18;
 
 //   setTimeout(() => {
 //     if (edad >= 18) {
@@ -110,18 +110,18 @@ se rechace con "Menor de edad" en caso contrario.*/
 //   console.log(x);
 // });
 
-// function comprobarEdad(edad) {
-//   return new Promise((resolve, reject) => {
-//     if (edad >= 18) {
-//       resolve("mayor de dedad");
-//     } else {
-//       reject("no es mayor de edad");
-//     }
-//   });
-// }
-// comprobarEdad(20).then((x) => {
-//   console.log(x);
-// });
+function comprobarEdad(edad) {
+  return new Promise((resolve, reject) => {
+    if (edad >= 18) {
+      resolve("mayor de  edad");
+    } else {
+      reject("no es mayor de edad");
+    }
+  });
+}
+comprobarEdad(20).then((x) => {
+  console.log(x);
+});
 //console.log(resultado);
 
 /*Ejercicio 6
@@ -133,19 +133,38 @@ Encadena tres promesas:
 
 Cada una tarda distinto tiempo.*/
 
-function conectar(params) {
-  console.log();
+// function conectar(params) {
+//   //console.log("22");
 
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("conectando");
-    }, 1000);
-  });
-}
-conectar()
-  .then(descargar)
-  .then(listo)
-  .then((x) => {
-    console.log(x);
-  })
-  .catch((err) => console.error(err));
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       let resultado = "conectando";
+//       resolve(resultado);
+//     }, 1000);
+//   });
+// }
+
+// function descargar() {
+//   return new Promise((resolve, reject) =>
+//     setTimeout(() => {
+//       resolve("descargando");
+//     }, 2000)
+//   );
+// }
+
+// function listo() {
+//   return new Promise((resolve, reject) => {
+//     //console.log("esperando 3 segundo en listo");
+
+//     setTimeout(() => {
+//       resolve("listo");
+//     }, 3000);
+//   });
+// }
+// conectar()
+//   .then(descargar)
+//   .then(listo)
+//   .then((x) => {
+//     console.log(x);
+//   })
+//   .catch((err) => console.error(err));
