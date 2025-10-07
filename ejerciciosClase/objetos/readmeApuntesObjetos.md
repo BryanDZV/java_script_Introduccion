@@ -52,4 +52,8 @@ map para callback
 map par apromise===promise all?¿ en paralelo se ejucata vasrias promesas
 promise rosolve para garantizar que la variable dodne se guarde tenga then promise race
 
+DOOM
+DONDE poner el script
+getby element
 EJERCICIO
+crea una pagina con div y una serie de colores cuando pulse un div se ponga una selecion alrededor del div y que cuando pulse el boton tome el coler de ese div con selecion
