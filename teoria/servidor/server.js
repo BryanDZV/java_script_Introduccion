@@ -1,15 +1,13 @@
 import express from "express";
 import dotenv from "dotenv";
+dotenv.config();
 import countriesRoutes from "./routes/countriesRoutes.js";
-
 import marvelRoutes from "./routes/marvelRoutes.js";
 
-dotenv.config();
-
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
-app.use(express.json());
+app.use(express.json()); //middelware para leer json
 
 app.get("/", (req, res) => {
   res.send("SERVIDOR FUNCIONA");

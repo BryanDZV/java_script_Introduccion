@@ -1,4 +1,3 @@
-import { log } from "console";
 import crypto from "crypto";
 import dotenv from "dotenv";
 dotenv.config();
@@ -18,8 +17,10 @@ export const fetchMarvelCharacters = async () => {
 
   try {
     const response = await fetch(url);
-    const data = await response.json();
-    console.log(data);
+    const data = await response.json(); //aqui me llegan los datos
+
+    console.log(data); //ERROR AQUI LLEGA COMO OBJETO
+    console.log(JSON.stringify(data, null, 2));
 
     return data.data.results.map((char) => ({
       name: char.name,
