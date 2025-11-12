@@ -5,7 +5,7 @@ import countriesRoutes from "./routes/countriesRoutes.js";
 import marvelRoutes from "./routes/marvelRoutes.js";
 
 const app = express();
-const PORT = process.env.PORT;
+const port = process.env.PORT;
 
 app.use(express.json()); //middelware para leer json
 
@@ -17,6 +17,6 @@ app.get("/", (req, res) => {
 app.use("/api/countries", countriesRoutes);
 app.use("/api/marvel", marvelRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Servidor escuchando en http://localhost:${PORT}`);
+app.listen(port, () => {
+  console.log(`Servidor escuchando en http://localhost:${port}`);
 });
